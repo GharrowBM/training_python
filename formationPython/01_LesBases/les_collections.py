@@ -52,3 +52,35 @@ liste_imbrik = [1, 2, 3, 4, [1, 2, 3, 4, 5], [6]]
 print(f"INIT => liste_imbrik : {liste_imbrik}")
 print(f"liste_imbrik[4] : {liste_imbrik[4]}")
 print(f"liste_imbrik[4][1:3] : {liste_imbrik[4][1:3]}")
+
+# Les Dictionnaires
+mon_dict = {0: {"prenom": "Paul",
+                "profession": "Ingénieur civil",
+                "ville": "Paris"},
+            1: {"prenom": "Marie",
+                "profession": "Pêcheuse",
+                "ville": "Marseille"},
+            2: {"prenom": "Sandra",
+                "profession": "Architecte décoratrice",
+                "ville": "Toulouse"}}
+print(f"mon_dict : {mon_dict}")
+print(f"mon_dict[1]['ville'] : {mon_dict[1]['ville']}")
+print(f"mon_dict.get('ville', 'Pas de valeur') : {mon_dict[1].get('ville', 'Pas de valeur')}")
+print(f"mon_dict[0] : {mon_dict[0]}")
+mon_dict[0]['ville'] = "Poitiers"
+print(f"mon_dict[0] : {mon_dict[0]}")
+mon_dict[0]['age'] = 43
+print(f"mon_dict[0] : {mon_dict[0]}")
+if 'age' in mon_dict[0]:
+    del mon_dict[0]['age']
+print(f"mon_dict[0] : {mon_dict[0]}")
+
+# Boucler sur un dictionnaire
+for x in mon_dict.keys():
+    print(x)
+for x in mon_dict.values():
+    print(x)
+for x in mon_dict.items():
+    print(x)
+for k, v in mon_dict.items():
+    print(f"KEY : {k}, VALUE : {v}")
