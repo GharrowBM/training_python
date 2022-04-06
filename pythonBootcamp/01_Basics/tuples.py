@@ -1,6 +1,0 @@
-# Les Tuples (Immutables contrairement aux listes)
-my_tuple = (1, "Bernie", 3.5)
-print(f"my_tuple : {my_tuple}")
-print(f"my_tuple[1] : {my_tuple[1]}")
-print(f"my_tuple.count('a') : {my_tuple.count('a')}")
-print(f"my_tuple.index('Bernie') : {my_tuple.index('Bernie')}")
