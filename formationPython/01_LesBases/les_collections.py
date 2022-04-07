@@ -84,3 +84,22 @@ for x in mon_dict.items():
     print(x)
 for k, v in mon_dict.items():
     print(f"KEY : {k}, VALUE : {v}")
+
+
+# Les Sets (Permettant de retirer les doublons par exemple)
+my_set = set()
+my_set.add("Bernie")
+my_set.add(3.5)
+my_set.add(666)
+print(f"my_set : {my_set}")
+strange_list = [1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,3]
+strange_set = set(strange_list)
+print(f"strange_set : {strange_set}")
+
+
+# Les Tuples (Immutables contrairement aux listes)
+my_tuple = (1, "Bernie", 3.5)
+print(f"my_tuple : {my_tuple}")
+print(f"my_tuple[1] : {my_tuple[1]}")
+print(f"my_tuple.count('a') : {my_tuple.count('a')}")
+print(f"my_tuple.index('Bernie') : {my_tuple.index('Bernie')}")
