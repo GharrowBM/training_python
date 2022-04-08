@@ -8,5 +8,5 @@ def index(request):
 
     date = datetime.today()
 
-    return render(request, "index.html", context={"surnom": "Ryu", "date": date})
+    return render(request, "DocBlog/index.html", context={"surnom": "Ryu", "date": date})
     # return HttpResponse("<h1>Bonjour, bienvenue sur mon site</h1>") pour renvoyer de l'HTML basique

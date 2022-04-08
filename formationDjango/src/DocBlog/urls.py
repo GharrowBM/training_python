@@ -14,13 +14,16 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from .views import index
+# from blog.views import index as blog_index
 
 
 #  Les redirections se font indépendamment de la présence ou non du slash
 #  car la constante APPEND_SLASH = True par défaut
 urlpatterns = [
     path('', index, name='index'),
+    # path('blog/index/', blog_index),
+    path('blog/', include("blog.urls")),
     path('admin/', admin.site.urls),
 ]
