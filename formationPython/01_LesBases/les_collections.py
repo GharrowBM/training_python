@@ -103,3 +103,21 @@ print(f"my_tuple : {my_tuple}")
 print(f"my_tuple[1] : {my_tuple[1]}")
 print(f"my_tuple.count('a') : {my_tuple.count('a')}")
 print(f"my_tuple.index('Bernie') : {my_tuple.index('Bernie')}")
+
+#  L'unpacking des Tuples
+chiffre, nom, chiffre_virgule = my_tuple
+print(chiffre)
+print(nom)
+print(chiffre_virgule)
+
+
+#  Les retours multiples via utilisation de Tuples
+def ma_fonction(a: int, b: int):
+    somme = a + b
+    produit = a * b
+
+    return a, b
+
+
+somme, produit = ma_fonction(5, 10)
+print(f"La somme de 5 + 10 vaut {somme} et le produit de 5 * 10 vaut {produit}")
